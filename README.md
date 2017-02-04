@@ -9,7 +9,16 @@
 
 A description of the python code, the data preprocessing and the deep learning model, used to teach the car driving itself on the first track of the simulator for the behavioral cloning of the Udacity, Self Drivng Car Engineer Nanodegree.
 After learning the behavior of the driver, the model can drive the car havinf as inputs the images from the cameras and directly controling the steering angle.
+######################
 
+## Data used for training
+Inially, I tried to collect data using the simulator but the procedure was not succesful. Then, several weeks ago, Udacity provided data from the simulator. Since I was not able until that point
+to obtain my own simulated data, I asked my mentor if that data was adequate for training. So, I started experimenting with it. 
+Additionally, after studying the work of other students of the nanodegree to obtain some insights -since I did ot have any previous experience with such kind of problems-,
+I decided to proceed with this data and apply on them the processing that is described in the rest of this README. Then, I trained several models with this data, borrowed from other students,
+and finally I obtained the one presented here which successfully drives the car in most of the autonomous steering simulations
+
+######################
 ## preprocess.py
 This python script imports the raw image data and resizes them.
 
@@ -34,7 +43,6 @@ When the training completes, the model and weights are saved as model.json and m
 This is the python script that receives the running data from the simulator, i.e., driving state and images, predicts the new steering angle using the deep learning model, and send the throttle and the predicted angles back to the simulator.
 
 Since the images were reshaped and normalized during training, the image from the simulator is reshaped and normalized just as in preprocess.py and model.py in order match with what the model has used as training input.
-
 ######################
 
 ## Training
