@@ -12,7 +12,7 @@ After learning the behavior of the driver, the model can drive the car havinf as
 ######################
 
 ## Data used for training
-Inially, I tried to collect data using the simulator but the procedure was not succesful. Then, several weeks ago, Udacity provided data from the simulator. Since I was not able until that point
+Initially, I tried to collect data using the simulator but the procedure was not succesful. Then, several weeks ago, Udacity provided data from the simulator. Since I was not able until that point
 to obtain my own simulated data, I asked my mentor if that data was adequate for training. So, I started experimenting with it. 
 Additionally, after studying the work of other students of the nanodegree to obtain some insights -since I did ot have any previous experience with such kind of problems-,
 I decided to proceed with this data and apply on them the processing that is described in the rest of this README. Then, I trained several models with this data, borrowed from other students,
